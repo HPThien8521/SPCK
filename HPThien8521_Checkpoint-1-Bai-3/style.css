@@ -1,0 +1,129 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #e0f0fd;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: auto;
+    color: #ffffff;
+    line-height: 1.4em;
+    height: 553.375px;
+    width: 435px;
+    margin-top: 10%;
+    padding: 15px;
+    background-color: #232528;
+    border-radius: 8px;
+}
+
+.register-container {
+    padding: 10px;
+    width: 415px;
+    height: 490.375px;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.font-caption-header {
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    height: 26px;
+    width: 385px;
+    padding: 5px 12px;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #656668;
+    background-color: #090b0c;
+    font-size: 16px;
+    color: #bdbebe;
+    margin-top: 5px;
+    transition: 0ms;
+}
+
+input:focus {
+    border: 1px solid #bdbebe;
+}
+
+::-webkit-input-placeholder {
+    color: #626464;
+    font-size: 16px;
+}
+
+.gender-form {
+    height: 46px;
+    width: 411px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #656668;
+    background-color: #090b0c;
+    font-size: 16px;
+    color: #bdbebe;
+    margin-top: 5px;
+}
+
+.female-btn {
+    width: 206.5px;
+    height: 46px;
+    border: none;
+    background-color: #fde0e000;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.female-icon {
+    background-image: url(https://images.rbxcdn.com/535002190af0360c2aae7f204ed65ade-gender-female.png);
+    height: 46px;
+    width: 35px;
+    margin: 3px auto;
+    background-repeat: no-repeat;
+}
+
+.male-btn {
+    width: 206.5px;
+    height: 46px;
+    border: none;
+    background-color: #fde0e000;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transform: translate(206.5px, -108px);
+}
+
+.line {
+    width: 0px;
+    height: 46px;
+    border: 1px solid #656668;
+    transform: translate(206.5px, -60px);
+}
+
+.male-icon {
+    background-image: url(https://images.rbxcdn.com/0eea8fbf5b4e7206e5b99a0d0dc3f074-gender-male.png);
+    height: 46px;
+    width: 35px;
+    margin: 3px auto;
+    background-repeat: no-repeat;
+}
+
+.text {
+    font-size: 13px;
+}
+
+.btn {
+    border-radius: 8px;
+    width: 410px;
+    height: 36px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}

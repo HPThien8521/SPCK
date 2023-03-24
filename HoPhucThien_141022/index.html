@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Lesson 6  
+        </title>
+    </head>
+    <body>
+        <input id="list" type="text">
+        <!----<select id="selectColor">
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+        </select>---->
+        <input type="color" id="selectColor">
+        <button onclick="innerH()">
+            Confirm
+        </button>
+        <div id="title">
+
+        </div>
+        <script>
+            var arr = [];
+            function innerH() {
+                document.getElementById('title').innerHTML = ""
+                let ip_list = document.getElementById('list').value;
+                arr.push(ip_list);
+                let color = document.getElementById("selectColor").value;
+                let elementH = document.createElement('h1');
+                elementH.style.color = color;
+                for (let index = 0; index < arr.length; index++) {
+                    elementH.innerHTML += arr[index] + '<br>';
+                }
+                document.getElementById('title').appendChild(elementH);
+            }
+        </script>
+    </body>
+</html>

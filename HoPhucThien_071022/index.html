@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #red{
+                height: 100px;
+                width: 150px;
+            }
+            #green{
+                margin-left: 15px;
+                height: 100px;
+                width: 150px;
+            }
+            #yellow{
+                margin-left: 15px;
+                height: 100px;
+                width: 150px;
+            }
+            #on {
+                margin-right: 15px;
+                height: 180px;
+                width: 100px;
+            }
+            #off {
+                height: 180px;
+                width: 100px;
+            }
+        </style>
+        <title>JavaScript</title>
+    </head>
+    <body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        <h1 style="text-align: center; color: rgb(234, 198, 100);">First appearance of JavaScript</h1>
+        <div style="justify-content: center; display: block; margin-left: auto; margin-right: auto; background-image: url('https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png'); background-size: 100%; height: 185px; width: 300px;">
+        </div>
+        <h3>Alert, confirms and prompts</h3>
+    <div>
+        <p>This is an alert in JS(JavaScript)</p>
+        <button onclick="myAlertFunction()">Try me</button>
+    <script>
+        function myAlertFunction() {
+            let result = "This is an alert"
+            alert(result)
+        }
+    </script>
+    </div>
+    <div>
+        <p>This is a confirm in JS(JavaScript)</p>
+        <button onclick="myConfirmFunction()">Try me</button>
+        <script>
+            function myConfirmFunction() {
+                let result = "This is a confirm"
+                confirm(result)
+            }
+        </script>
+    </div>
+    <div>
+        <p>This is a prompt in JS(JavaScript)</p>
+        <button onclick="myPromtFunction()">Try me</button>
+        <script>
+            function myPromtFunction() {
+                let result = "This is a prompt"
+                prompt(result)
+            }
+        </script>
+    </div>
+        <div>
+        <div style="margin-top: 15px;">
+            <h3>This is an alert-based login site</h3>
+            <input type="text" id="test" placeholder="Username">
+            <input type="password" id="" placeholder="Password">
+            <button onclick="Confirm()">Confirm</button>
+            <script>
+                function Confirm() {
+                    let result = document.getElementById("test").value;
+                    alert(result)
+                }
+            </script>
+        </div>
+    </div>
+    <h3 style="text-align: center;">These are traffic lights</h3>
+        <div style="display: flex; justify-content: center;">
+            <div id="red"></div>
+            <div id="green"></div>
+            <div id="yellow"></div>
+        </div>
+        <div style="margin-top: 15px; text-align: center;">
+        <button onclick="redLightOnFunction()">Red</button>
+        <button onclick="greenLightOnFunction()" style="margin-left: 15px;">Green</button>
+        <button onclick="yellowLightOnFunction()" style="margin-left: 15px;">Yellow</button>
+        <script>
+            function redLightOnFunction() {
+                document.getElementById("red").style.backgroundColor = "red"
+                document.getElementById("green").style.backgroundColor = "white"
+                document.getElementById("yellow").style.backgroundColor = "white"
+                let result = "You turned the red light on, yay!"
+                alert(result)
+            }
+            function greenLightOnFunction() {
+                document.getElementById("red").style.backgroundColor = "white"
+                document.getElementById("green").style.backgroundColor = "green"
+                document.getElementById("yellow").style.backgroundColor = "white"
+                let result = "You turned the green light on, yay!"
+                alert(result)
+            }
+               function yellowLightOnFunction() {
+                    document.getElementById("red").style.backgroundColor = "white"
+                    document.getElementById("green").style.backgroundColor = "white"
+                    document.getElementById("yellow").style.backgroundColor = "yellow"
+                    let result = "You turned the yellow light on, yay!"
+                    alert(result)
+               }
+        </script>
+        </div>
+        <div>
+            <h3 style="text-align: center; margin-top: 50px;">This is a working lightbulb</h3>
+            <div style="justify-content: center; display: flex;">
+                <div id="on"></div>
+                <div id="off"></div>
+            </div>
+        </div>
+            <div style="text-align: center; margin-top: 15px;">
+                
+                <button onclick="onOffFunction()">ON/OFF</button>
+                <script>
+                    var lightSetting = false
+                    function onOffFunction() {
+                        if (lightSetting == false) {
+                            document.getElementById("on").style.backgroundImage = "url('images/pic_bulbon.gif')";
+                            document.getElementById("off").style.backgroundImage = "url()";
+                            lightSetting = true
+                        }
+                        else {
+                            document.getElementById("off").style.backgroundImage = "url('images/pic_bulboff.gif')";
+                            document.getElementById("on").style.backgroundImage = "url()";
+                            lightSetting = false;
+                        }
+                    }
+                </script>
+    </body>
+</html>

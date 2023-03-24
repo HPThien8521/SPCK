@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/calculator/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <td colspan="3"><input type="text" disabled id="ip-result" /></td>
+        <td><button onclick="Ac()">AC</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="getValueAndSetToInput(9)">9</button></td>
+        <td><button onclick="getValueAndSetToInput(8)">8</button></td>
+        <td><button onclick="getValueAndSetToInput(7)">7</button></td>
+        <td><button>/</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="getValueAndSetToInput(6)">6</button></td>
+        <td><button onclick="getValueAndSetToInput(5)">5</button></td>
+        <td><button onclick="getValueAndSetToInput(4)">4</button></td>
+        <td><button>x</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="getValueAndSetToInput(3)">3</button></td>
+        <td><button onclick="getValueAndSetToInput(2)">2</button></td>
+        <td><button onclick="getValueAndSetToInput(1)">1</button></td>
+        <td><button>-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="getValueAndSetToInput(0)">0</button></td>
+        <td><button>.</button></td>
+        <td><button>=</button></td>
+        <td><button>+</button></td>
+      </tr>
+    </table>
+    <script src="/calculator/main.js"></script>
+  </body>
+</html>

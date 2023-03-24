@@ -1,0 +1,31 @@
+.wrapper {
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.body {
+    font-family: 'Poppins', sans-serif;
+}
+#products {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    padding: 8em 0;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+.content{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}

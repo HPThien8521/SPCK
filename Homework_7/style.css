@@ -1,0 +1,109 @@
+.image {
+    background-image: url(images/iphone-14pro.png);
+    width: 444px;
+    height: 444px;
+    background-size: cover;
+}
+.holder {
+    max-width: 444px;
+}
+.row-img {
+    display: flex;
+    justify-content: space-around;
+}
+.image1 {
+    background-image: url(images/img1.png);
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    border-radius: 15px;
+    transition: 0.1s;
+    border: none;
+}
+.image1:hover {
+    border: 2px solid rgb(2, 11, 190);
+}
+.image2 {
+    background-image: url(images/img2.png);
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    border-radius: 15px;
+    border: none;
+    transition: 0.1s;
+}
+.image2:hover {
+    border: 2px solid rgb(2, 11, 190);
+}
+.image3 {
+    background-image: url(images/img3.png);
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    border-radius: 15px;
+    border: none;
+    transition: 0.1s;
+}
+.image3:hover {
+    border: 2px solid rgb(2, 11, 190);
+}
+.image4 {
+    background-image: url(images/img4.png);
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    border-radius: 15px;
+    border: none;
+    transition: 0.1s;
+}
+.image4:hover {
+    border: 2px solid rgb(2, 11, 190);
+}
+.image5 {
+    background-image: url(images/img5.png);
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    border-radius: 15px;
+    border: none;
+    transition: 0.1s;
+}
+.image5:hover {
+    border: 2px solid rgb(2, 11, 190);
+}
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.brand {
+    font-weight: 300;
+}
+.brand i {
+    color: rgb(2, 11, 190);
+}
+.brand-color {
+    color: rgb(2, 11, 190);
+}
+.holder-flex {
+    display: flex;
+}
+.details {
+    width: 444px;
+}
+.seperate-line {
+    background-color: rgb(240, 240, 240);
+    flex-shrink: 0;
+    margin: 0px 12px;
+    width: 1px;
+}
+.fa-star {
+    color: rgb(255, 225, 0);
+}
+.rate-row {
+    display: flex;
+}
+.rate-row h3 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 300;
+    color: rgb(199, 199, 199);
+}
