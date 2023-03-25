@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    font-style: italic;
+    border-bottom: 3px solid green;
+    border-top: 3px solid green;
+}
+body{
+    margin: 0;
+}
+h3 {
+    margin-left: 10px;
+}
+.info {
+    margin-left: 20px;
+}
