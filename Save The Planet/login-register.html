@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/281580f019.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Account</title>
+  </head>
+  <body>
+    <!---account page-->
+    <div class="account-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <img src="images/earthteam.png" alt="" width="295px" />
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="register()">Register</span>
+                <hr id="Indicator" />
+              </div>
+              <form action="" id="LoginForm">
+                <input type="text" id="" placeholder="Username" />
+                <input
+                  type="password"
+                  id="password-log"
+                  placeholder="Password"
+                />
+                <button type="submit" class="btn">Login</button>
+                <a href="">Forgot Password?</a>
+                <br /><br /><br /><br /><br /><br /><br />
+                <a href="index.html" class="backhome-btn-log"
+                  >Back Home &#8594;</a
+                >
+              </form>
+              <form action="" id="RegForm">
+                <input type="text" placeholder="Username" />
+                <input type="email" id="email" placeholder="Email" />
+                <input
+                  type="password"
+                  id="password-reg"
+                  placeholder="Password"
+                />
+                <button type="submit" class="btn">Register</button>
+                <br /><br /><br /><br /><br /><br />
+                <a href="index.html" class="backhome-btn">Back Home &#8594;</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="register.js"></script>
+  </body>
+</html>

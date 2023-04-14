@@ -1,29 +1,37 @@
 body {
     margin: 0%;
+    font-family: "Poppins", sans-serif !important;
 }
 
 .border-bottom {
     border-bottom: 4px solid green;
 }
+.header-container{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(images/header.png) !important;
+    position: absolute;
+    width: 100%;
+    height: 821px;
+}
 
 .header {
-    background-image: linear-gradient(to bottom, rgba(66, 27, 27, 0.42), rgba(66, 27, 27, 0.42));
     background-position: center;
     position: relative;
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin: 0px, 0px, 0px, 0px;
     margin-bottom: 20px;
 }
 .img {
-    width: 85px;
+    width: 200px;
     margin-left: 30px;
+    margin-right: 50px;
 }
 nav {
     display: flex;
     margin-right: 0px;
+    z-index: 100000 !important;
     justify-content: space-between;
     align-items: center;
     margin-right: 60px;
@@ -73,6 +81,19 @@ nav {
 .nav-links ul li a:hover {
     color: green;
 }
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: green;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
 .buttons {
     flex: 1;
     text-align: right;
@@ -84,11 +105,30 @@ nav {
 .renew {
     background-color: #fff !important;
     color: green;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.renew:hover {
+    color: #fff;
+    background-color: black !important;
+    border: 1px solid #fff;
 }
 .donate {
     background-color: green !important;
     color: #fff;
     border: 1px solid green !important;
+    cursor: pointer;
+    font-weight: 600;
+    width: 109px;
+    height: 44px;
+    transition: 0.5s;
+}
+.donate:hover {
+    color: #fff;
+    background-color: black !important;
+    border: 1px solid #fff;
+    
 }
 .buttons ul li {
     list-style: none;
@@ -103,5 +143,562 @@ nav {
     height: 44px;
     font-size: 14px;
     font-weight: 600;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-box {
+    margin-top: 75px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+}
+
+.text-box h1 {
+    font-size: 62px;
+    color: #ffffff;
+}
+.btn {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: green;
+    border: 1px solid green;
+    background-color: #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 0px;
+    top: 50px;
+}
+.btn:hover {
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #fff;
+}
+.h1-mission {
+    font-size: 30px;
+}
+.h2-mission {
+    font-size: 1.5em;
+}
+.p-mission {
+    font-size: 18px;
+}
+.small-container {
+    width: 100%;
+    padding: 0;
+    display: grid;
+    margin-top: 100px;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+}
+.text-mission {
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+.line-break {
+    margin: 50px;
+    width: 95%;
+    height: 1px;
+    background-color: #ccc;
+}
+.parts-3-rows-2{
+    margin-right: 75px;
+    justify-content:space-evenly;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+.parts-3-rows-2 p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+}
+.parts-3-rows-2 h1 {
+    font-size: 1.7rem;
+}
+.parts-2-rows-2 {
+    margin-right: 130x;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+.parts-2-rows-2 p {
+    font-family: 'Poppins', sans-serif;
+    margin-right: 15px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.parts-2-rows-2 h1 {
+    font-size: 22px;
+}
+.parts-2-rows-1{
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.parts-2-rows-1-about-us {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.goals-2030-text {
+    margin-left: 100px;
+}
+.goals-2030-text h1{
+    font-size: 2.5rem;
+}
+.goals-2030-text p{
+    font-size: 18px;
+    font-weight: 300;
+}
+.small-container-nature {
+    width: 100%;
+    padding: 0;
+    margin-top: 100px;
+}
+.text-nature {
+    text-align: center;
+    width: 100%;
+}
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.campus-col {
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    margin-right: 80px;
+    position: relative;
+}
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+.layer {
+    background: rgba(0, 0, 0, 0.378);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 0.5s;
+}
+.layer:hover {
+    background: rgba(0, 0, 0, 0.575);
+    border: 5px solid #fff;
+    padding: 0;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.447) 0px 5px 25px;
+}
+.layer h3 {
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    font-size: 26px;
+    bottom: 42%;
+    position: absolute;
+}
+.last i {
+    font-size: 50px;
+    color: green;
+}
+.last h2 {
+    font-size: 25px;
+}
+.last h3 {
+    margin-left: 200px;
+    font-size: 20px;
+    color: green;
+}
+.container-last {
+    height: 600px;
+    background-image: url(https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/fpo-home-find-chapter.jpg?crop=0%2C0%2C1600%2C600&wid=1600&hei=600&scl=1.0);
+}
+/*footer*/
+.container {
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+    background: #102719;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p {
+    color: #bababb;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+    margin-left: 5%;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 280px;
+    height: 70px;
+    margin-bottom: 20px;
+    color: #fff;
+    filter: brightness(0) invert(1);
+}
+
+.footer-col-3,
+.footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer ul li {
+    color: #bababb;
+    margin-right: 35px;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo a img {
+    width: 140px;
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.Copyright {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*login-register page*/
+.backhome-btn {
+    margin-left: 45px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+.container {
+    font-family: 'Poppins', sans-serif;
+}
+.account-page {
+    padding: 50px 0;
+    background: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(191, 255, 191, 0.363)), url('images/forest.png');
+    height: 721px;
+}
+
+.col-2 img {
+    margin-top: 150px;
+}
+.form-container {
+    border-radius: 8px;
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20% 0;
+    margin: 60px auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.form-container span {
+    font-weight: bold;
+    padding: 0px 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+.form-container form {
+    margin-top: 0px;
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input {
+    width: 91%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn {
+    width: 100%;
+    border: 1px solid green;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.form .btn:focus {
+    outline: none;
+}
+
+#LoginForm {
+    left: -350px;
+}
+
+#LoginForm input {
+    width: 79%;
+    margin-right: 43px;
+}
+
+#LoginForm .btn {
+    width: 87%;
+    margin-right: 43px;
+}
+
+#RegForm {
+    left: 0;
+}
+
+#RegForm input {
+    width: 91%;
+}
+
+form a {
+    font-size: 12px;
+    color: #555;
+    text-decoration: none;
+    margin-right: 43px;
+}
+
+#Indicator {
+    width: 100px;
+    border: none;
+    background: green;
+    height: 3px;
+    margin-top: 8px;
+    margin-left: 38px;
+    transform: translateX(100px);
+    transition: transform 0.5s;
+}
+
+
+
+
+
+
+
+
+/*donate**/
+.header-donate {
+    background-position: center;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px, 0px, 0px, 0px;
+}
+.header-donate-2 {
+    background-position: center;
+    top: 170px;
+    z-index: 2;
+    background-image: url(https://teamtrees.org/img/big-header.png);
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px, 0px, 0px, 0px;
+}
+.background {
+    margin-top: 30px;
+    background-image: linear-gradient(to bottom, rgb(43, 48, 62), rgba(255, 183, 0, 0.598));
+    background-size: cover;
+}
+.text-donate {
+    text-align: center;
+}
+.sun {
+    bottom: 230px;
+    background-image: url(images/kindpng_1294669.png);
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px, 0px, 0px, 0px;
+}
+.donate-form {
+    border-radius: 8px;
+    background: #fff;
+    width: 300px;
+    height: 315px;
+    bottom: 320px;
+    z-index: 3;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px !important;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+}
+.donate-form h1 {
+    font-size: 20px;
+}
+.donate-form h2 {
+    font-size: 15px;
+}
+.donate-options {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    display: grid;
+    grid-gap: 6px;
+    grid-column-gap: 0px;
+    grid-template-columns: auto auto;
+}
+.donate-options button{
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #cbd5e0;
+    background-color: #edf2f6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 132px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+.other-amount {
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #cbd5e0;
+    background-color: #edf2f6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    width: 266px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+.other-amount::placeholder {
+    padding-left: 15px;
+}
+.other-amount:focus::placeholder {
+    color: white;
+}
+.button-left {
+    margin-left: 10px;
+}
+.button-right {
+    margin-right: 10px;
+}
+.line-break-donate {
+    margin-left: 14px;
+    margin-top: 30px;
+    width: 90%;
+    height: 1px;
+    background-color: #ccc;
+}
+.btn-donate {
+    cursor: pointer;
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: green;
+    border: 1px solid #cbd5e0;
+    padding: 20px;
+    width: 275px;
+    font-weight: 600;
+    color: white;
+}
+.donate-footer {
+    top: 1551px;
+    position: absolute;
+}
+.background-2nd{
+    width: 100%;
+    position: absolute;
+    top:1141px;
+    background-image: linear-gradient(to bottom, #0f325c, #b4dbe1);
+    background-size: cover;
+}
+.last-background {
+    width: 100%;
+    position: absolute;
+    top: 920px;
+    background-image: linear-gradient(to bottom, #0f325c, #0f325c);
+    background-size: cover;
+}
+.background-2nd img {
+    width: 100%;
+    margin-top: 100px;
 }

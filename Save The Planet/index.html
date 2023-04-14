@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;300&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="images/logo.png" />
@@ -16,31 +16,350 @@
       src="https://kit.fontawesome.com/281580f019.js"
       crossorigin="anonymous"
     ></script>
-    <title>Save The Planet!</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Home</title>
   </head>
   <body>
     <section class="header">
       <nav class="nav-index border-bottom" id="menu">
-        <a href=""><img src="images/logo.png" class="img" /></a>
+        <a href="index.html"><img src="images/earthteam.png" class="img" /></a>
         <div class="nav-links" id="navLinks">
           <ul>
             <li><a href="index.html">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="login-register.html">ACCOUNT</a></li>
+            <li>
+              <a style="cursor: pointer" onclick="aboutUsScroll()">ABOUT US</a>
+            </li>
+            <li>
+              <a style="cursor: pointer" onclick="ourGoalsScroll()"
+                >OUR GOALS</a
+              >
+            </li>
+            <li><a href="api.html">SEE THE WEATHER</a></li>
           </ul>
         </div>
         <div class="buttons" id="navLinks">
           <ul>
             <li>
-              <button class="renew">RENEW</button>
+              <a href="login-register.html"
+                ><button class="renew">REGISTER</button></a
+              >
             </li>
             <li>
-              <button class="donate">DONATE</button>
+              <a href="donate.html"><button class="donate">DONATE</button></a>
             </li>
           </ul>
         </div>
       </nav>
+      <div class="header-container">
+        <div class="text-box">
+          <h1 class="text">
+            Protect What Nature Gives<br />
+            You
+          </h1>
+          <p class="paragraph">
+            You can make an immediate difference right now. Make a generous
+            donation today to<br />
+            help protect and restore our natural world.
+          </p>
+          <a href="donate.html" class="btn">GIVE NOW</a>
+        </div>
+      </div>
     </section>
+    <div class="small-contaner">
+      <div class="parts-2-rows-1-about-us">
+        <div class="goals-2030-text">
+          <h1>
+            Stepping Up Progress<br />
+            in this Defining Decade
+          </h1>
+          <p>
+            Alongside communities, we’re urgently clearing<br />
+            obstacles and finding solutions to the climate and<br />
+            biodiversity crises.
+          </p>
+        </div>
+        <div class="parts-2-rows-2">
+          <div>
+            <h1>Who We Are</h1>
+            <p>
+              We are dedicated staff, scientists and members<br />
+              advancing effective, lasting conservation in more<br />
+              than 70 countries and territories.
+            </p>
+          </div>
+          <div>
+            <h1>What We Do</h1>
+            <p>
+              To make the highest possible impact on the climate<br />
+              and biodiversity crises between now and 2030, we're<br />
+              developing breakthrough ideas, amplifying local<br />
+              leaders and influencing policy.
+            </p>
+          </div>
+          <div>
+            <h1>How To Help</h1>
+            <p>
+              There are so many ways to make positive change for<br />
+              our planet. Volunteer with us. Learn how to reduce<br />
+              your carbon footprint. Donate to conservation work.
+            </p>
+          </div>
+          <div>
+            <h1>Where We Work</h1>
+            <p>
+              Dense rainforests, remote coral reefs and the hearts<br />
+              of major cities. Our strategies are as diverse as the<br />
+              habitats and geographies in which we work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line-break"></div>
+    <div class="small-container">
+      <div>
+        <img
+          src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/WOPA160517_D056-resized.jpg?crop=864%2C0%2C1728%2C2304&wid=1200&hei=1600&scl=1.44"
+          alt=""
+          height="766px"
+          width="574px"
+        />
+      </div>
+      <div class="text-mission">
+        <h2 class="h2-mission">Our Mission</h2>
+        <h1 class="h1-mission">
+          Conserving the lands<br />
+          and waters on which<br />
+          all life depends
+        </h1>
+        <p class="p-mission">
+          Every acre we protect and every river mile we restore begins with
+          you.<br />
+          Your support helps us take on the dual threats of climate change
+          and<br />
+          biodiversity loss across 70+ countries and territories.
+        </p>
+        <a href="donate.html"><button class="donate">DONATE</button></a>
+      </div>
+    </div>
+    <!--thing--->
+    <div class="small-contaner">
+      <div class="parts-2-rows-1">
+        <div class="goals-2030-text">
+          <h1>
+            Our Goals for<br />
+            2030
+          </h1>
+          <p>
+            We’re racing to hit these targets to<br />
+            help the world reverse climate<br />
+            change and biodiversity loss.<br />
+            Together, we find the paths to make<br />
+            change possible.
+          </p>
+        </div>
+        <div class="parts-3-rows-2">
+          <div>
+            <h1>
+              <img
+                src="https://www.nature.org/content/dam/tnc/nature/en/icons/statistics-icons/Icon_CO2.svg"
+                height="25px"
+                alt=""
+              />
+              3B
+            </h1>
+            <p>
+              Avoid or sequester 3 billion metric tons of<br />
+              carbon dioxide emissions annually—the<br />
+              same as taking 650 million cars off the<br />
+              road every year.
+            </p>
+          </div>
+          <div>
+            <h1>
+              <img
+                src="https://www.nature.org/content/dam/tnc/nature/en/icons/statistics-icons/Icon_People.svg"
+                height="25px"
+                alt=""
+              />
+              100M
+            </h1>
+            <p>
+              Help 100 million people at severe risk of<br />
+              climate-related emergencies by<br />
+              safeguarding habitats that protect<br />
+              communities.
+            </p>
+          </div>
+          <div>
+            <h1>
+              <img
+                src="https://www.nature.org/content/dam/tnc/nature/en/icons/statistics-icons/Icon_Land.svg"
+                height="25px"
+                alt=""
+              />
+              650M
+            </h1>
+            <p>
+              Conserve 650 million hectares—a land<br />
+              area twice the size of India—of biodiverse<br />
+              habitats such as forests, grasslands and<br />
+              desert.
+            </p>
+          </div>
+          <div>
+            <h1>
+              <img
+                src="https://www.nature.org/content/dam/tnc/nature/en/icons/statistics-icons/Icon_Ocean.svg"
+                height="25px"
+                alt=""
+              />
+              4B
+            </h1>
+            <p>
+              Conserve 4 billion hectares of marine<br />
+              habitat—more than 10% of the world's<br />
+              oceans—through protected areas,<br />
+              sustainable fishing and more.
+            </p>
+          </div>
+          <div>
+            <h1>
+              <img
+                src="https://www.nature.org/content/dam/tnc/nature/en/icons/statistics-icons/Icon_River.svg"
+                height="25px"
+                alt=""
+              />
+              30M
+            </h1>
+            <p>
+              Conserve 1 million kilometers of rivers—<br />enough to stretch 25
+              times around the<br />
+              globe—plus 30 million hectares of lakes<br />
+              and wetlands.
+            </p>
+          </div>
+          <div>
+            <h1>
+              <img
+                src="https://www.nature.org/content/dam/tnc/nature/en/icons/statistics-icons/Icon_Partnership.svg"
+                height="25px"
+                alt=""
+              />
+              45M
+            </h1>
+            <p>
+              Support the leadership of 45 million<br />
+              people from Indigenous and local<br />
+              communities in stewarding their<br />
+              environment and securing rights.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line-break"></div>
+    <div class="small-container-nature">
+      <div class="text-nature">
+        <h1>Nature Needs You</h1>
+        <p>
+          There are so many ways you can get involved and do your part to
+          support a world where people and nature thrive<br />
+          together.
+        </p>
+      </div>
+      <div class="campus">
+        <div class="campus-col">
+          <img
+            src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/SeaTurtle-Bahamas-ShaneGross-3500x2000.jpg?crop=750%2C0%2C2000%2C2000&wid=300&hei=300&scl=6.666666666666667"
+            alt=""
+          />
+          <div class="layer">
+            <h3>Take an Action</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <a href="donate.html">
+            <img
+              src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/wisconsin-seasonal-images/BarnOwlInSnow.jpg?crop=333%2C0%2C667%2C667&wid=300&hei=300&scl=2.223333333333333"
+              alt=""
+            />
+            <div class="layer">
+              <h3>Donate to Our Mission</h3>
+            </div>
+          </a>
+        </div>
+        <div class="campus-col">
+          <img
+            src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/grace-teninga-discovery-trail-ella-jacquart.jpg?crop=874%2C0%2C2252%2C2252&wid=300&hei=300&scl=7.506666666666667"
+            alt=""
+          />
+          <div class="layer">
+            <h3>Volunteer</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line-break"></div>
+    <div class="container-last">
+      <div class="text-nature last">
+        <i class="fa-solid fa-quote-left"></i>
+        <h2>
+          Small acts, when <br />
+          multiplied by millions<br />
+          of people, can<br />
+          transform the world.
+        </h2>
+        <h3>-Howard Zinn</h3>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <a href="play.google.com"
+                ><img src="images/play-store.png" alt=""
+              /></a>
+              <a href=""><img src="images/app-store.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/earthteam.png" alt="" />
+            <p>
+              EarthTeam is a nonprofit, tax-exempt charitable organization (tax
+              identification number 53-0242652) under Section 501(c)(3) of the
+              U.S. Internal Revenue Code. Donations are tax-deductible as
+              allowed by law. Global sites represent either regional branches of
+              EarthTeam or local affiliates of EarthTeam that are separate
+              entities.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><i class="fa fa-facebook-square"></i> Facebook</li>
+              <li><i class="fa fa-twitter"></i> Twitter</li>
+              <li><i class="fa fa-instagram"></i> Instagram</li>
+              <li><i class="fa fa-youtube-play"></i> YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="Copyright">© Copyright 2022-2022, Ho Phuc Thien</p>
+      </div>
+    </div>
   </body>
+  <script src="main.js"></script>
 </html>
