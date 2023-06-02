@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+}
+
+.container {
+    padding: 15px;
+}
+
+.navbar-brand img {
+    margin-bottom: 10px;
+}
+
+.navbar-brand {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.setWidth {
+    height: 700px !important;
+    margin-bottom: 30px;
+}
+.price {
+    text-decoration: none;
+}
+.product-item {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.label {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.footer {
+    background: #000000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p {
+    color: #bababb;
+}
+nav {
+    height: 80px;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+    margin-left: 5%;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 280px;
+    height: 70px;
+    margin-bottom: 20px;
+    color: #fff;
+    filter: brightness(0) invert(1);
+}
+
+.footer-col-3,
+.footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer ul li {
+    color: #bababb;
+    margin-right: 35px;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo a img {
+    width: 140px;
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.Copyright {
+    text-align: center;
+}
