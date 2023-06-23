@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Your Apple ID - Apple</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/apple-512.png"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <script
+      src="https://kit.fontawesome.com/281580f019.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bao gồm các thư viện Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
+  "
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
+  "></script>
+    <!-- Bao gồm thư viện Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+  </head>
+
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <div id="page">
+      <section class="sticky">
+        <article class="container">
+          <div class="brand-logo">
+            <a href="index.html" class="brand-name">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/640px-Apple_logo_white.svg.png"
+                alt=""
+                width="23px"
+              />
+            </a>
+          </div>
+          <nav id="site-navigation" class="main-navigation">
+            <div class="menu-main-menu-container">
+              <ul class="menu nav-menu">
+                <li><a href="">STORE</a></li>
+                <li><a href="">MAC</a></li>
+                <li><a href="">IPHONE</a></li>
+                <li><a href="">IPAD</a></li>
+                <li><a href="">WATCH</a></li>
+                <li><a href="">VISION</a></li>
+                <li><a href="">AIRPODS</a></li>
+                <li><a href="">TV & HOME</a></li>
+                <li><a href="">ACCESSORIES</a></li>
+                <li class="border-btm-effect"><a href="">ACCOUNT</a></li>
+                <li>
+                  <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </article>
+      </section>
+      <form id="form">
+        <div class="intro text-centered">
+          <h1>Create Your Apple ID</h1>
+          <div class="intro-text">
+            One Apple ID is all you need to access all Apple services.
+          </div>
+          <div class="intro-link">
+            Already have an Apple ID?
+            <a href="login.html" class="no-wrap a-i-s">Find it here ></a>
+          </div>
+        </div>
+        <div class="flow-section account-info-section">
+          <div class="container-xs center">
+            <div class="name-container">
+              <div class="first-name">
+                <input
+                  type="text"
+                  class="form-textbox"
+                  placeholder="First name"
+                  id="first-name"
+                  required
+                />
+              </div>
+              <div class="last-name">
+                <input
+                  type="text"
+                  class="form-textbox"
+                  placeholder="Last name"
+                  id="last-name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="email">
+              <input
+                type="email"
+                class="form-textbox textbox-name"
+                id="email"
+                placeholder="name@example.com"
+                required
+              />
+              <div id="" class="text-apple-ID">
+                This will be your new Apple ID.
+              </div>
+            </div>
+            <div>
+              <input
+                type="password"
+                class="form-textbox"
+                id="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div class="confirm-password">
+              <input
+                type="password"
+                class="form-textbox"
+                placeholder="Confirm Password"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flow-section">
+          <div class="container-xs center">
+            <div>
+              <input
+                id="datePickerId"
+                type="text"
+                onfocus="(this.type='date')"
+                onblur="if (this.value=='') this.type='text'"
+                placeholder="Birthday"
+                class="form-textbox"
+                maxlength="16"
+                required
+              />
+            </div>
+            <div>
+              <input
+                id="phone"
+                placeholder="Phone"
+                class="form-textbox"
+                maxlength="16"
+                required
+              />
+            </div>
+            <div class="text-apple-ID">
+              Be sure to enter a phone number you can always access. It will be
+              used to verify your identity any time you sign in on a new device
+              or web browser. Messaging or data rates may apply.
+            </div>
+            <div class="verify-with-container">
+              <div class="verify-label">Verify with:</div>
+              <div class="verify-option-1">
+                <input type="radio" name="type" checked />
+                <label>Text message</label>
+              </div>
+              <div class="verify-option-2">
+                <input type="radio" name="type" />
+                <label>Phone call</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flow-section">
+          <div class="container-xs center">
+            <div class="updates">
+              <div>
+                <input type="checkbox" id="news" name="news" class="" checked />
+                <label class="news-label label"
+                  >Announcements
+                  <small class="label-small"
+                    >Receive Apple emails and communications including
+                    announcements, marketing, recommendations, and updates about
+                    Apple products, services and software.</small
+                  >
+                </label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="itunes"
+                  name="itunes"
+                  class=""
+                  checked
+                />
+                <label class="itunes-label label"
+                  >Apps, Music, TV, And More
+                  <small class="label-small"
+                    >Receive Apple emails and communications including
+                    announcements, marketing, recommendations, and updates about
+                    Apple products, services and software.</small
+                  ></label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="end">
+          <div class="label-small container-xs center privacy-wrapper">
+            <div class="privacy-icon"></div>
+            Your Apple ID information is used to allow you to sign in securely
+            and access your data. Apple records certain data for security,
+            support and reporting purposes. If you agree, Apple may also use
+            your Apple ID information to send you marketing emails and
+            communications, including based on your use of Apple services.
+            <a href="" class="a-i-s">See how your data is managed.</a>
+          </div>
+          <button class="button-85" id="submit" type="submit">Continue</button>
+        </div>
+      </form>
+      <!--
+      <div style="width: 500px" class="mx-auto mt-5">
+        <div class="container">
+          <form id="signup-form">
+            <div class="form-group my-2">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="form-group my-2">
+              <label for="phone">Username:</label>
+              <input type="tel" class="form-control" id="phone" required />
+            </div>
+            <div class="form-group my-2">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Đăng ký</button>
+          </form>
+        </div>
+      </div>-->
+    </div>
+
+    <script>
+      // Cấu hình thông tin Firebase
+      var firebaseConfig = {
+        apiKey: "AIzaSyApLXfVK03JqF2noV2yAqt1Vt9il2mYp1k",
+        authDomain: "pro-project-b1214.firebaseapp.com",
+        projectId: "pro-project-b1214",
+        storageBucket: "pro-project-b1214.appspot.com",
+        messagingSenderId: "556693218828",
+        appId: "1:556693218828:web:cbcccf6e322afe718ff029",
+      };
+
+      // Khởi tạo Firebase
+      firebase.initializeApp(firebaseConfig);
+      db = firebase.firestore();
+    </script>
+    <script src="./register.js"></script>
+    <script src="./phoneFormat.js"></script>
+    <script src="./birthday.js"></script>
+  </body>
+</html>

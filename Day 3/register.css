@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'Apple';
+    src: url(fonts/SF-Pro-Text-Regular.otf);
+}
+.intro {
+    margin-top: 50px;
+    color: #fff;
+    font-family: 'Apple';
+    text-align: center;
+}
+.no-wrap {
+    white-space: nowrap;
+}
+.a-i-s {
+    color: #0070c9;
+    font-family: 'Apple';
+    text-decoration: none;
+}
+.a-i-s:hover{
+    text-decoration: underline;
+}
+.flow-section {
+    max-width: 1200px;
+    margin: auto;
+    width: 80%;
+    border-bottom: 1px solid #4d4d4d;
+    padding: 30px 0 20px;
+}
+.account-info-section {
+    padding-top: 15px;
+}
+.center {
+    margin: auto;
+    display: block;
+}
+.container-xs {
+    max-width: 460px;
+}
+.name-container{
+    display: grid;
+    column-gap: 7.5px;
+    grid-template-columns: auto auto;
+}
+.form-textbox {
+        font-size: 17px;
+        line-height: 1.23543;
+        font-weight: 400;
+        letter-spacing: -.022em;
+        font-family: 'Apple';
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: top;
+        width: 100%;
+        height: 3.3em !important;
+        padding-top: 0 !important;
+        margin-bottom: 14px;
+        padding-top: 18px;
+        padding-left: 16px;
+        padding-right: 16px;
+        color: #fff;
+        text-align: left;
+        border: 1px solid #707070;
+        border-radius: 4px;
+        background: #232527;
+        background-clip: padding-box;
+}
+.form-textbox:focus {
+    outline: none;
+    border: 1px solid #fff;
+}
+.form-textbox::placeholder {
+    vertical-align: top !important;
+}
+.text-apple-ID {
+    color: #b9b9b9;
+    font-family: 'Apple';
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.textbox-name {
+    margin-bottom: 8px;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.verify-with-container {
+    color: #fff;
+    font-family: 'Apple';
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+}
+.updates {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+}
+.label {
+    color: #fff;
+    font-family: 'Apple';
+}
+.label-small {
+    font-size: 12px;
+    color: #b9b9b9;
+    font-family: 'Apple';
+    display: grid;
+    grid-template-columns: auto;
+    padding-left: 25px;
+}
+.privacy-icon {
+    background-image: url("https://appleid.cdn-apple.com/static/bin/cb230738313/dist/assets/privacy-icon@2x.png");
+    margin: 10px auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 35px;
+    height: 28px;
+}
+.privacy-wrapper {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-bottom: none !important;
+}
+.button {
+    margin-top: 1.3em;
+    position: relative;
+    left: 45.25%;
+    font-size: 18px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 30px;
+    padding: 10px 30px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* CSS */
+.button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    left: 45.25%;
+    transition: 0.5s;
+}
+
+.button-85:before {
+    content: "";
+    background: linear-gradient(45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.end {
+    max-width: 1200px;
+    margin: auto;
+    width: 80%;
+    padding: 30px 0 20px;
+    padding-bottom: 95px;
+}
+.color {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Apple';
+}
+.text-left {
+    text-align: left;
+    margin-left: 300px;
+    margin-bottom: 75px;
+}
+.mt {
+    margin-top: 15px;
+}
+.container-form {
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 17%;
+}
+.sign-up-text {
+    font-size: 15px;
+    color: #fff;
+}
+.mg-b {
+    margin-bottom: 40px;
+}
+.no-pt {
+    padding-top: 0;
+    height: 2.6em;
+}
+.iii {
+    margin-left: 6px;
+}
+input[type='date'] {
+    color: #fff;
+}
+.no-id{
+    color: #fff;
+    font-family: 'Apple';
+    text-decoration: none;
+}

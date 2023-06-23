@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign In - Apple</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/281580f019.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="register.css" />
+    <link
+      rel="icon"
+      href="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/apple-512.png"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <!-- Bao gồm các thư viện Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
+  "
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
+  "></script>
+    <!-- Bao gồm thư viện Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+  </head>
+
+  <body>
+    <!--<div style="width: 500px" class="mx-auto mt-5">
+      <div class="container">
+        <h2>Sign In</h2>
+        <form id="signin-form">
+          <div class="form-group my-2">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="form-group my-2">
+            <label for="password">Mật khẩu:</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Đăng nhập</button>
+        </form>
+      </div>
+    </div> -->
+    <div id="page">
+      <section class="sticky">
+        <article class="container">
+          <div class="brand-logo">
+            <a href="index.html" class="brand-name">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/640px-Apple_logo_white.svg.png"
+                alt=""
+                width="23px"
+              />
+            </a>
+          </div>
+          <nav id="site-navigation" class="main-navigation">
+            <div class="menu-main-menu-container">
+              <ul class="menu nav-menu">
+                <li><a href="">STORE</a></li>
+                <li><a href="">MAC</a></li>
+                <li><a href="">IPHONE</a></li>
+                <li><a href="">IPAD</a></li>
+                <li><a href="">WATCH</a></li>
+                <li><a href="">VISION</a></li>
+                <li><a href="">AIRPODS</a></li>
+                <li><a href="">TV & HOME</a></li>
+                <li><a href="">ACCESSORIES</a></li>
+                <li class="border-btm-effect"><a href="">ACCOUNT</a></li>
+                <li>
+                  <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </article>
+      </section>
+      <form id="form">
+        <div class="intro text-left">
+          <h1>Sign In for faster check-out</h1>
+        </div>
+        <div class="flow-section account-info-section">
+          <div class="container-xs center">
+            <div class="email">
+              <input
+                type="email"
+                class="form-textbox textbox-name no-pt"
+                id="email"
+                placeholder="Apple ID"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                class="form-textbox no-pt mt"
+                id="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="end">
+          <div class="sign-up-text container-xs center privacy-wrapper">
+            <div class="mg-b">
+              <input type="checkbox" name="" id="" />
+              Remember me
+            </div>
+            <a href="" class="mg-b a-i-s">Forgot Apple Id or password?</a>
+            <div class="container-form">
+              Don't have and Apple Id?
+              <a href="register.html" class="a-i-s iii"> Create yours now.</a>
+            </div>
+          </div>
+          <button class="button-85" id="submit" type="submit">Continue</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      // Cấu hình thông tin Firebase
+      var firebaseConfig = {
+        apiKey: "AIzaSyApLXfVK03JqF2noV2yAqt1Vt9il2mYp1k",
+        authDomain: "pro-project-b1214.firebaseapp.com",
+        projectId: "pro-project-b1214",
+        storageBucket: "pro-project-b1214.appspot.com",
+        messagingSenderId: "556693218828",
+        appId: "1:556693218828:web:cbcccf6e322afe718ff029",
+      };
+
+      // Khởi tạo Firebase
+      firebase.initializeApp(firebaseConfig);
+      db = firebase.firestore();
+    </script>
+    <script src="./login.js"></script>
+  </body>
+</html>
