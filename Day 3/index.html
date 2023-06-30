@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--slick slider-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--things-->
     <title>Apple</title>
     <link
       rel="icon"
@@ -50,7 +67,40 @@
   <body>
     <div id="page">
       <section class="sticky">
-        <article class="container">
+        <article class="container" id="nav">
+          <div class="brand-logo">
+            <a href="index.html" class="brand-name">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/640px-Apple_logo_white.svg.png"
+                alt=""
+                width="23px"
+              />
+            </a>
+          </div>
+          <nav id="site-navigation" class="main-navigation">
+            <div class="menu-main-menu-container">
+              <ul class="menu nav-menu">
+                <li><a href="">STORE</a></li>
+                <li><a href="">MAC</a></li>
+                <li><a href="">IPHONE</a></li>
+                <li><a href="">IPAD</a></li>
+                <li><a href="">WATCH</a></li>
+                <li><a href="">VISION</a></li>
+                <li><a href="">AIRPODS</a></li>
+                <li><a href="">TV & HOME</a></li>
+                <li><a href="">ACCESSORIES</a></li>
+                <li><a href="register.html">ACCOUNT</a></li>
+                <li>
+                  <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </article>
+        <article class="container-2 container" id="nav-2">
           <div class="brand-logo">
             <a href="index.html" class="brand-name">
               <img
@@ -85,16 +135,17 @@
         </article>
       </section>
       <div class="wrapper">
+        <div class="transition"></div>
         <div class="banner">
           <div class="buy">
-            <h1>iPhone 14 Pro</h1>
-            <h2>Pro. Beyond</h2>
+            <h1 class="headline">iPhone 14 Pro</h1>
+            <h2 class="subline">Pro. Beyond</h2>
             <div class="grid-link">
-              <a>Learn More ></a>
-              <a>Buy Now ></a>
+              <a href="" class="a-s pr-15">Learn More ></a>
+              <a href="" class="a-s">Buy ></a>
             </div>
           </div>
-          <div class="image-banner1">
+          <div class="image-banner">
             <img
               src="https://www.apple.com/v/home/bb/images/heroes/iphone-14-pro/hero_iphone14pro_spring__9xo85pm6sbmm_large_2x.jpg"
               alt=""
@@ -103,6 +154,478 @@
           </div>
         </div>
       </div>
+      <div class="wrapper-1">
+        <div class="banner">
+          <div class="buy-light">
+            <h1 class="headline">MacBook Air 15"</h1>
+            <h2 class="subline">Impressively big. Impossibly thin.</h2>
+            <div class="grid-link">
+              <a href="" class="a-s pr-15">Learn More ></a>
+              <a href="" class="a-s">Buy ></a>
+            </div>
+          </div>
+          <div class="image-banner">
+            <img
+              src="https://www.apple.com/v/home/bb/images/heroes/macbook-air-15/hero_macbook_air_15__x63n8tqcpo2u_large_2x.jpg"
+              alt=""
+              width="3008px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-1">
+        <div class="banner">
+          <div class="buy-light">
+            <h1 class="headline">Save on Mac or iPad for college.</h1>
+            <h2 class="subline">Plus get a gift card up to $150.</h2>
+            <div class="grid-link">
+              <a href="" class="a-s">Shop now ></a>
+            </div>
+          </div>
+          <div class="image-banner">
+            <img
+              src="https://www.apple.com/v/home/bb/images/heroes/back-to-school-2023/hero_bts2023_startframe__f787lg06y3ue_large_2x.jpg"
+              alt=""
+              width="3008px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="wrapper-2">
+          <div class="banner-mini">
+            <div class="buy-light mini-pos">
+              <h1 class="headline-mini">iPhone 14</h1>
+              <h2 class="subline-mini">Wonderful.</h2>
+              <div class="cta-link">
+                <a href="" class="a-s pr-15">Learn more ></a>
+                <a href="" class="a-s">Buy ></a>
+              </div>
+            </div>
+            <div class="image-banner mini-banner">
+              <img
+                src="https://www.apple.com/v/home/bb/images/promos/iphone-14/promo_iphone14_yellow__fnqrkyt3tz22_large_2x.jpg"
+                alt=""
+                width="1262px"
+                height="580px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-2">
+          <div class="banner-mini">
+            <div class="buy-light mini-pos-under">
+              <h1 class="headline-mini">Vision Pro</h1>
+              <h2 class="subline-mini">
+                Welcome to the era of spatial computing.
+              </h2>
+              <div class="callout">Available early next year in the U.S.</div>
+              <div class="cta-link">
+                <a href="" class="a-s">Learn more ></a>
+              </div>
+            </div>
+            <div class="image-banner mini-banner-2 yes">
+              <img
+                src="https://www.apple.com/v/home/bb/images/promos/apple-vision-pro/promo_apple_vision_pro__f4v4zp0sum2y_large_2x.jpg"
+                width="1262px"
+                height="580px"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-2">
+          <div class="banner-mini">
+            <div class="buy mini-pos">
+              <h1 class="headline-mini">WATCH</h1>
+              <h2 class="subline-mini series-8">SERIES 8</h2>
+              <h2 class="subline-mini">Wonderful.</h2>
+              <div class="cta-link">
+                <a href="" class="a-s pr-15">Learn more ></a>
+                <a href="" class="a-s">Buy ></a>
+              </div>
+            </div>
+            <div class="image-banner mini-banner align-pos">
+              <img
+                src="https://www.apple.com/v/home/bb/images/promos/apple-watch-series-8/promo_apple_watch_series_8_spring__d9hfvufh7hyu_large_2x.jpg"
+                alt=""
+                width="1262px"
+                height="580px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-2">
+          <div class="banner-mini">
+            <div class="buy mini-pos">
+              <h1 class="headline-mini">iPad Pro</h1>
+              <h2 class="subline-mini">
+                Supercharged by
+                <span
+                  ><img
+                    src="https://www.apple.com/v/home/bb/images/logos/ipad-pro/promo_m2_chip__enw2kz91lsuq_large_2x.png"
+                    height="37px"
+                    width="37px"
+                    alt=""
+                /></span>
+              </h2>
+              <div class="cta-link">
+                <a href="" class="a-s pr-15">Learn more ></a>
+                <a href="" class="a-s">Buy ></a>
+              </div>
+            </div>
+            <div class="image-banner mini-banner no-mg">
+              <img
+                src="https://www.apple.com/v/home/bb/images/promos/ipad-pro/promo_ipadpro_refresh__evi9utuixwuq_large_2x.jpg"
+                alt=""
+                width="1262px"
+                height="580px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-2">
+          <div class="banner-mini">
+            <div class="buy-light mini-pos">
+              <h1 class="headline-mini">TradeIn</h1>
+              <h2 class="subline-mini">Upgrade and save. It's that easy.</h2>
+              <div class="cta-link">
+                <a href="" class="a-s">See what your device is worth ></a>
+              </div>
+            </div>
+            <div class="image-banner mini-banner no-mg">
+              <img
+                src="https://www.apple.com/v/home/bb/images/promos/iphone-tradein/iphone_tradein_promo__d5au3rkw5kuq_large_2x.jpg"
+                alt=""
+                width="1262px"
+                height="580px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-2">
+          <div class="banner-mini">
+            <div class="buy-light mini-pos">
+              <h1 class="headline-mini">Card</h1>
+              <h2 class="subline-mini">
+                Get up to 3% Daily Cash back with every purchase.
+              </h2>
+              <div class="cta-link">
+                <a href="" class="a-s pr-15">Learn more ></a>
+                <a href="" class="a-s">Apply now ></a>
+              </div>
+            </div>
+            <div class="image-banner mini-banner no-mg">
+              <img
+                src="https://www.apple.com/v/home/bb/images/promos/apple-card/tile__cauwwcyyn9hy_large_2x.jpg"
+                alt=""
+                width="1262px"
+                height="580px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center">
+        <div class="image-slider-container">
+          <img
+            class="image-slider"
+            src="https://is5-ssl.mzstatic.com/image/thumb/o-hWS10b7owES52fYFnD_w/1960x1102.jpg"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="inner">
+            <div class="button">Stream Now </div>
+            <p class="text-align">
+              <span class="genre">Drama</span>
+              <span class="mt-dot">.</span>
+              Raise your game
+            </p>
+          </div>
+        </div>
+        <div class="image-slider-container">
+          <img
+            class="image-slider"
+            src="https://is2-ssl.mzstatic.com/image/thumb/JdmLVQN99mIa15_uECg4uw/1960x1102.jpg"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="inner">
+            <div class="button">Stream Now </div>
+            <p class="text-align">
+              <span class="genre">Sci-Fi</span>
+              <span class="mt-dot">.</span>
+              The truth will surface
+            </p>
+          </div>
+        </div>
+        <div class="image-slider-container">
+          <img
+            class="image-slider"
+            src="https://is3-ssl.mzstatic.com/image/thumb/CvNCk6LFQGbwX_XWcd7gag/1960x1102.jpg"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="inner">
+            <div class="button">Stream Now </div>
+            <p class="text-align text-align-btm">
+              <span class="genre">Comedy</span>
+              <span class="mt-dot">.</span>
+              Seth Rogen and Rose Byrne are old friends who reunite for a
+              hilarious new chapter.
+            </p>
+          </div>
+        </div>
+        <div class="image-slider-container">
+          <img
+            class="image-slider"
+            src="https://is3-ssl.mzstatic.com/image/thumb/JJo1Kp84yVQ1emwipSnq2A/1960x1102.jpg"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="inner">
+            <div class="button">Stream Now </div>
+            <p class="text-align">
+              <span class="genre">Thriller</span>
+              <span class="mt-dot">.</span>
+              The facts are never the whole story.
+            </p>
+          </div>
+        </div>
+        <div class="image-slider-container">
+          <img
+            class="image-slider"
+            src="https://www.apple.com/v/home/bb/images/tv-plus-gallery/fnb__brvfy48gzsz6_large_2x.jpg"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="inner">
+            <div class="button">Stream Now </div>
+            <p class="text-align">
+              <span class="genre">Sports</span>
+              <span class="mt-dot">.</span>
+              Live MLB games every Friday.
+            </p>
+          </div>
+        </div>
+        <div class="image-slider-container">
+          <img
+            class="image-slider"
+            src="https://is3-ssl.mzstatic.com/image/thumb/ABzBSgCWuBrg4lysVcozcw/1960x1102.jpg"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="inner">
+            <div class="button">Stream Now </div>
+            <p class="text-align">
+              <span class="genre">Sci-Fi</span>
+              <span class="mt-dot">.</span>
+              Catch up before Season 2 premieres on July 14.
+            </p>
+          </div>
+        </div>
+        <div class="image-slider-container">
+          <img
+            class="image-slider"
+            src="https://is3-ssl.mzstatic.com/image/thumb/ageP1PYyLi7UlNiWMva32Q/1960x1102.jpg"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="inner">
+            <div class="button">Stream Now </div>
+            <p class="text-align">
+              <span class="genre">Comedy</span>
+              <span class="mt-dot">.</span>
+              Kindness makes a comeback.
+            </p>
+          </div>
+        </div>
+        <div class="image-slider-container">
+          <img
+            class="image-slider"
+            src="https://is2-ssl.mzstatic.com/image/thumb/A_R7PS9DPKeHWxifN_JHFg/1960x1102.jpg"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="inner">
+            <div class="button">Stream Now </div>
+            <p class="text-align">
+              <span class="genre">Mystery</span>
+              <span class="mt-dot">.</span>
+              Protect what you love.
+            </p>
+          </div>
+        </div>
+        <div class="image-slider-container">
+          <img
+            class="image-slider"
+            src="https://is1-ssl.mzstatic.com/image/thumb/qL-yBoKCFztx-kDyvIXlHw/1960x1102.jpg"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="inner">
+            <div class="button">Stream Now </div>
+            <p class="text-align">
+              <span class="genre">Comedy</span>
+              <span class="mt-dot">.</span>
+              Breakdown. Breakthrough.
+            </p>
+          </div>
+        </div>
+        <div class="image-slider-container">
+          <img
+            class="image-slider"
+            src="https://is2-ssl.mzstatic.com/image/thumb/divxDY27bQOH7PPRX2wfJQ/1960x1102.jpg"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="inner">
+            <div class="button">Stream Now </div>
+            <p class="text-align">
+              <span class="genre">Drama</span>
+              <span class="mt-dot">.</span>
+              Unknown. Unexplained. Unbelievable. Until now.
+            </p>
+          </div>
+        </div>
+        <div class="image-slider-container">
+          <img
+            class="image-slider"
+            src="https://is3-ssl.mzstatic.com/image/thumb/Ze8uZ-TWJ2JMbqmtcz8_BA/1960x1102.jpg"
+          />
+          <div class="overlay"></div>
+          <div class="inner">
+            <div class="button">Stream Now </div>
+            <p class="text-align">
+              <span class="genre">Action</span>
+              <span class="mt-dot">.</span>
+              Meeting that special someone can be a real adventure.
+            </p>
+          </div>
+        </div>
+        <div class="image-slider-container">
+          <img
+            class="image-slider"
+            src="https://is1-ssl.mzstatic.com/image/thumb/QZB0J5JE-kQfPl48Z4SIfw/1960x1102.jpg"
+            alt=""
+          />
+          <div class="overlay"></div>
+          <div class="inner">
+            <div class="button">Stream Now </div>
+            <p class="text-align">
+              <span class="genre">Animation</span>
+              <span class="mt-dot">.</span>
+              Friendship, imagination, and adventure!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phone.</p>
+              <div class="app-logo">
+                <a href="play.google.com"
+                  ><img src="images/play-store.png" alt=""
+                /></a>
+                <a href=""><img src="images/app-store.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/640px-Apple_logo_white.svg.png"
+                alt=""
+              />
+              <p>
+                Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City
+                Branch. Learn more about how Apple Card applications are
+                evaluated at <a>support.apple.com/kb/HT209218</a>. A
+                subscription is required for Apple TV+. Major League Baseball
+                trademarks and copyrights are used with permission of MLB
+                Advanced Media, L.P. All rights reserved.
+              </p>
+            </div>
+            <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul class="ul">
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow Us</h3>
+              <ul class="ul">
+                <li><i class="fa fa-facebook-square"></i> Facebook</li>
+                <li><i class="fa fa-twitter"></i> Twitter</li>
+                <li><i class="fa fa-instagram"></i> Instagram</li>
+                <li><i class="fa fa-youtube-play"></i> YouTube</li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <p class="Copyright">
+            Copyright © 2023 Apple Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
     </div>
+
+    <script src="home.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+      integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".center").slick({
+          centerMode: true,
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          draggable: false,
+          centerPadding: "220px",
+          dots: true,
+          speed: 800,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>
