@@ -10,6 +10,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 #page {
+  overflow-x: hidden;
   background-color: #121110;
   z-index: -111111111;
 }
@@ -416,4 +417,21 @@ li button:before {
 }
 .slick-active .overlay {
   opacity: 0;
+}
+/*--yesss
+no
+no             this is the
+no              mac-html's
+no                 css
+no                wahooo
+no
+no
+--*/
+.card {
+  text-decoration: none;
+}
+#product-list .col-3 {
+  transition: 0.5s;
+}
+#product-list .col-3:hover {
 }
