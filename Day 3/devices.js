@@ -11,6 +11,45 @@ const formatter = new Intl.NumberFormat("vi-VN", {
   //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
 });
 
+const renderCart = (myCart) => {
+  // xu ly hien thi gio hang khi moi vao trang web
+  if (myCart.length > 0) {
+    // gio hang co san pham
+    let htmlString = "";
+    myCart.map((cartItem) => {
+      htmlString += `
+        <div class="cart-item d-flex my-3">
+          <img
+            class="me-3"
+            src="${cartItem.img}"
+            alt=""
+            style="width: 120px; height: 120px; border-radius: 8px"
+          />
+          <div class="">
+            <h4>${cartItem.name}</h4>
+            <small class="text-primary">
+              ${formatter(cartItem.salePrice)}
+            </small>
+            <div class=""></div>
+            <small class="text-decoration-line-through">
+              ${formatter(cartItem.price)}
+            </small>
+          </div>
+        </div>
+      `;
+    });
+    document.getElementById("cart-body").innerHTML = htmlString;
+  } else {
+    // gio hang rong
+    document.getElementById("cart-body").innerHTML = `
+    <div class="flex-fill">
+      <img class="w-100" src="./empty-cart.svg" alt="" />
+      <p class="text-center">Chưa có sản phẩm nào bên trong giỏ hàng</p>
+    </div> 
+  `;
+  }
+};
+
 const addToCart = (id) => {
   console.log(id);
   const productPicked = productList.find((product) => product.id === id);
@@ -18,8 +57,6 @@ const addToCart = (id) => {
   localStorage.setItem("timmy_cart", JSON.stringify(productPickedList));
   document.getElementById("count-products").innerHTML =
     productPickedList.length;
-  document.getElementById("count-products-2").innerHTML =
-    document.getElementById("count-products").innerHTML;
 };
 
 fetch("https://649ed197245f077f3e9cf1ef.mockapi.io/products")
