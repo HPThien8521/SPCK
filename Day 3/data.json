@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "iPhone 14 Pro Max",
     "img": "https://shopdunk.com/images/thumbs/0018632_space-black_550.jpeg",
     "price": 34990000,
@@ -7,6 +8,7 @@
     "storageGB": 128
   },
   {
+    "id": 2,
     "name": "iPhone 14 Pro",
     "img": "https://shopdunk.com/images/thumbs/0008744_iphone-14-pro-128gb_550.png",
     "price": 30990000,
@@ -14,6 +16,7 @@
     "storageGB": 128
   },
   {
+    "id": 3,
     "name": "iPhone 14",
     "img": "https://shopdunk.com/images/thumbs/0009191_iphone-14-128gb_550.png",
     "price": 24990000,
@@ -21,6 +24,7 @@
     "storageGB": 128
   },
   {
+    "id": 4,
     "name": "iPhone 14 Plus",
     "img": "https://shopdunk.com/images/thumbs/0009496_iphone-14-plus-128gb_550.webp",
     "price": 27990000,
@@ -28,6 +32,7 @@
     "storageGB": 128
   },
   {
+    "id": 5,
     "name": "iPad Air 4",
     "img": "https://shopdunk.com/images/thumbs/0001207_space-gray_550.webp",
     "price": 19990000,
@@ -35,6 +40,7 @@
     "storageGB": 64
   },
   {
+    "id": 6,
     "name": "iPad gen 9 10.2 inch",
     "img": "https://shopdunk.com/images/thumbs/0006300_silver_550.webp",
     "price": 9990000,
@@ -42,6 +48,7 @@
     "storageGB": 64
   },
   {
+    "id": 7,
     "name": "Pad Pro M2 11 inch",
     "img": "https://shopdunk.com/images/thumbs/0007083_ipad-pro-m2-11-inch-wifi-128gb_550.webp",
     "price": 23990000,
@@ -49,6 +56,7 @@
     "storageGB": 128
   },
   {
+    "id": 8,
     "name": "iPad Pro M1",
     "img": "https://shopdunk.com/images/thumbs/0010884_ipad-pro-m1-129-inch-wifi-cellular-512gb_550.webp",
     "price": 42990000,
@@ -56,6 +64,7 @@
     "storageGB": 512
   },
   {
+    "id": 9,
     "name": "MacBook Air M1",
     "img": "https://shopdunk.com/images/thumbs/0006171_gold_550.webp",
     "price": 28990000,
@@ -63,10 +72,27 @@
     "storageGB": 256
   },
   {
+    "id": 10,
     "name": "MacBook Air M2",
-    "img": "",
+    "img": "https://shopdunk.com/images/thumbs/0008514_macbook-air-136-inch-m2-chip-with-8-core-cpu-and-8-core-gpu-256gb_550.png",
     "price": 32990000,
     "salesPrice": 27090000,
     "storageGB": 256
+  },
+  {
+    "id": 10,
+    "name": "MacBook Pro 13 inch M2",
+    "img": "https://shopdunk.com/images/thumbs/0008683_macbook-pro-13-inch-m2-chip-with-8-core-cpu-and-10-core-gpu-8gb-ram-256gb-ssd_550.webp",
+    "price": 35990000,
+    "salesPrice": 29790000,
+    "storageGB": 256
+  },
+  {
+    "id": 10,
+    "name": "MacBook Pro 14 inch M2 Pro",
+    "img": "https://shopdunk.com/images/thumbs/0011278_silver_550.jpeg",
+    "price": 55000000,
+    "salesPrice": 47450000,
+    "storageGB": 512
   }
 ]

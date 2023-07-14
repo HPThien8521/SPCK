@@ -430,8 +430,124 @@ no
 .card {
   text-decoration: none;
 }
-#product-list .col-3 {
+#product-list {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.card h5 {
+  color: #000;
+}
+.card .text-decoration-line-through {
+  color: #666;
+}
+.card {
   transition: 0.5s;
 }
-#product-list .col-3:hover {
+.card:hover {
+  transform: scale(1.04);
+  border: 0;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 55px;
+}
+.card img {
+  z-index: 1 !important;
+}
+.top-added {
+  overflow-y: hidden;
+  position: relative;
+  bottom: 35px;
+  z-index: 1000;
+  opacity: 0 !important;
+  transition: 0.7s !important;
+}
+.bg-article {
+  background: rgba(0, 0, 0, 0.62) !important;
+  backdrop-filter: blur(1rem);
+  color: #fff !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+.overflow-none {
+  overflow-y: hidden !important;
+  height: 267px;
+}
+.start {
+  left: 1065px !important;
+}
+.top {
+  top: 25px;
+}
+.card:hover .top-added {
+  bottom: 45px !important;
+  opacity: 1 !important;
+}
+.rs-header,
+.rs-subheader {
+  font-size: 48px;
+  line-height: 1.47059;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  font-family: "Apple";
+  display: inline;
+  color: #ffffff;
+}
+.rs-subheader {
+  color: #c7c7c7;
+}
+.rs-shop-header {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  margin-top: 80px;
+  padding: 0px 0 64px;
+}
+.rf-shop-chat-container {
+  position: relative;
+  left: 270px;
+  width: 200px;
+}
+.rs-shop-text {
+  max-width: 679px;
+}
+.rf-shop-title {
+  position: relative !important;
+  color: #fff;
+  right: 15px;
+}
+.rf-shop-content a {
+  text-decoration: none !important;
+  color: #0070c9;
+  font-weight: 300;
+}
+.rf-shop-content:hover a {
+  text-decoration: underline !important;
+  color: #0070c9;
+}
+.rf-specialist-container {
+  position: relative;
+  top: 20px;
+}
+.rf-applestore-container {
+  position: relative;
+  top: 35px;
+}
+.rf-image-container {
+  position: relative !important;
+}
+.rf-categories {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.rf-productnav-card-content a {
+  text-decoration: none !important;
+}
+.rf-productnav-card-image {
+  padding-bottom: 16px;
+}
+.rf-productnav-card-info {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 62px;
 }
