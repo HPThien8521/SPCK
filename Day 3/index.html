@@ -121,60 +121,6 @@
             </div>
           </nav>
         </article>
-        <article class="container-2 container" id="nav-2">
-          <div class="brand-logo">
-            <a href="index.html" class="brand-name">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/640px-Apple_logo_white.svg.png"
-                alt=""
-                width="23px"
-              />
-            </a>
-          </div>
-          <nav id="site-navigation" class="main-navigation">
-            <div class="menu-main-menu-container">
-              <ul class="menu nav-menu">
-                <li><a href="store.html">STORE</a></li>
-                <li><a href="">MAC</a></li>
-                <li><a href="">IPHONE</a></li>
-                <li><a href="">IPAD</a></li>
-                <li><a href="">WATCH</a></li>
-                <li><a href="">VISION</a></li>
-                <li><a href="">AIRPODS</a></li>
-                <li><a href="">TV & HOME</a></li>
-                <li><a href="">ACCESSORIES</a></li>
-                <li><a href="register.html">ACCOUNT</a></li>
-                <li>
-                  <a>
-                    <i
-                      class="fa-solid fa-magnifying-glass"
-                      style="color: white"
-                    ></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    data-bs-toggle="offcanvas"
-                    role="button"
-                    data-bs-target="#offcanvasExample"
-                    aria-controls="offcanvasExample"
-                  >
-                    <i
-                      class="fa-solid fa-bag-shopping"
-                      style="color: white"
-                    ></i>
-                    <span
-                      class="position-absolute start translate-middle badge rounded-pill bg-danger product-counter"
-                      id="count-products"
-                      >0
-                      <span class="visually-hidden">unread messages</span>
-                    </span></a
-                  >
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </article>
       </section>
       <div class="wrapper">
         <div class="transition"></div>
@@ -618,20 +564,23 @@
 
     <!-- sidebar cart -->
     <div
-      class="offcanvas offcanvas-end"
+      class="offcanvas offcanvas-end text-bg-dark"
       tabindex="-1"
       id="offcanvasExample"
       aria-labelledby="offcanvasExampleLabel"
     >
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Giỏ hàng</h5>
+        <h5 class="offcanvas-title ms-3" id="offcanvasExampleLabel">
+          Shopping Bag <i class="fa-solid fa-bag-shopping ms-1"></i>
+        </h5>
         <button
           type="button"
-          class="btn-close"
+          class="btn-close btn-close-white"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
         ></button>
       </div>
+      <hr />
       <div class="offcanvas-body" id="cart-body">
         <!-- trạng thái rỗng -->
         <!-- <div class="flex-fill">
@@ -665,9 +614,30 @@
             <div class=""></div>
             <small class="text-decoration-line-through">30.000.000 đ</small>
           </div>
-        </div>
+        </div>--->
       </div>
-    </div>--->
+      <div class="offcanvas-footer">
+        <div class="total-money text-end">
+          <span class="fw-bold">Total Bill: </span>
+          <span id="total-money">0</span>
+        </div>
+        <button class="btn btn-light w-100" style="border-radius: 0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-wallet2 mx-2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"
+            />
+          </svg>
+          <span>Đặt hàng</span>
+        </button>
+      </div>
+    </div>
     <script src="devices.js"></script>
     <script src="home.js"></script>
 
