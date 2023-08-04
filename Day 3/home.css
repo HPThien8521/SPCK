@@ -571,4 +571,12 @@ no
 }
 .delete-icon {
   fill: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+.cart-item:hover {
+  background-color: #00000030;
+}
+.cart-item:hover .delete-icon {
+  opacity: 1;
 }

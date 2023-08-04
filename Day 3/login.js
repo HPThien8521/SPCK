@@ -13,6 +13,17 @@ document.getElementById("form").addEventListener("submit", function (e) {
     .signInWithEmailAndPassword(user.email, user.password)
     .then(function (response) {
       console.log("sucessful", response.user);
+      db.collection("users")
+        .where("email", "==", user.email)
+        .get()
+        .then((snapshot) => {
+          snapshot.docs.map((item) => {
+            // chuyển về data
+            const user = item.data();
+
+            localStorage.setItem("adress", JSON.stringify(user.adress));
+          });
+        });
       Swal.fire({
         title: "Success!",
         text: "Sign In Success",

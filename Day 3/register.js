@@ -1,44 +1,46 @@
+document.getElementById("form").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-document.getElementById('form').addEventListener('submit', function(e) {
-  e.preventDefault()
-
-  const email = document.getElementById('email').value;
-  const phone = document.getElementById('phone').value;
-  const password = document.getElementById('password').value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+  const password = document.getElementById("password").value;
+  const adress = document.getElementById("adress").value;
 
   const user = {
     email,
     phone,
     password,
-  }
+    adress,
+  };
 
-  firebase.auth()
+  firebase
+    .auth()
     .createUserWithEmailAndPassword(user.email, user.password)
-    .then(function(response){
-      console.log('sucessful', response.user)
-        Swal.fire({
-        title: 'Success!',
-        text: 'Succesful session',
+    .then(function (response) {
+      console.log("sucessful", response.user);
+      Swal.fire({
+        title: "Success!",
+        text: "Succesful session",
         html: `
           <button class="btn btn-success" >
             <a href="./login.html" class="color">Sign In</a>
           </button>
         `,
-        icon: 'success',
+        icon: "success",
         showConfirmButton: false,
-      })
-      db.collection('users').add({
+      });
+      db.collection("users").add({
         email,
         password,
         phone,
-      })
+        adress,
+      });
     })
-    .catch(function(error){
-        Swal.fire({
-        title: 'Error!',
+    .catch(function (error) {
+      Swal.fire({
+        title: "Error!",
         text: error,
-        icon: 'error',
-        })
-    })
-})
-
+        icon: "error",
+      });
+    });
+});
