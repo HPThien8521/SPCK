@@ -93,13 +93,9 @@ const addToCart = (id) => {
 };
 const order = () => {
   const address = localStorage.getItem("adress");
+  const newData = JSON.parse(localStorage.getItem("timmy_cart")) || [];
 
-  if (productPickedList.length > 0) {
-    localStorage.removeItem("timmy_cart");
-    renderCart([]);
-    calcBill([]);
-    document.getElementById("count-products").innerHTML =
-      productPickedList.length;
+  if (newData && newData.length > 0) {
     Swal.fire({
       title: "Success!",
       text: "Order successful",
@@ -109,6 +105,10 @@ const order = () => {
       icon: "success",
       showConfirmButton: false,
     });
+    localStorage.removeItem("timmy_cart");
+    renderCart([]);
+    calcBill([]);
+    document.getElementById("count-products").innerHTML = 0;
   } else {
     Swal.fire({
       title: "Error!",
